@@ -1,0 +1,157 @@
+mixin modal(data)
+	.modal
+
+mixin modal-subs-content(data)
+	-var modifier = attributes.class || ''
+	.modal(class="#{modifier}")
+		.modal__content
+			.modal__title Регистрация: подписка на контент
+			.modal__text Чтобы подключить доступ к Подписке на Контент, заполните следующую форму:
+			form.modal-form
+				label.modal-form__label Введите номер мобильного телефона
+				input(type="text" placeholder="7 916 987 11 11 " value="").modal-form__input
+				.modal-form__example Пример: +7 (916) 987 11 11 или +380 (50) 111 11 11
+				input(type="submit" value="Выслать пароль").modal-form__button._purple
+		.modal__limitation._gray 18+	
+
+mixin modal-subs-content-agreement(data)
+	-var modifier = attributes.class || ''
+	.modal(class="#{modifier}")
+		.modal__content
+			.modal__title Регистрация: подписка на контент
+			.modal__text Чтобы подключить доступ к Подписке на Контент, заполните следующую форму:
+			form.modal-form
+				label.modal-form__label Введите номер мобильного телефона
+				input(type="text" placeholder="7 916 987 11 11 " value="").modal-form__input
+				.modal-form__example Пример: +7 (916) 987 11 11 или +380 (50) 111 11 11
+				label.modal-form-checkbox-block
+					input(type="checkbox" checked)
+					label.modal-form-checkbox-block__label Стоимость услуги
+				.modal-form__text
+					| Мне исполнилось 18 лет и Я согласен
+					| с <a href="#" title="">Правилами предоставления</a> Подписки 
+					| на Контент.
+				input(type="submit" value="Выслать пароль").modal-form__button._purple
+			a(href="#" title="").modal__link Я не из России или Украины
+		.modal__limitation._gray 18+
+
+mixin modal-registration-user(data)
+	-var modifier = attributes.class || ''
+	.modal(class="#{modifier}")
+		.modal__content
+			.modal-top
+				.modal__title Регистрация пользователя
+				.modal-top__pagination 1 из 2
+			.modal__text
+				| На указанный вами номер телефона будет отправленно SMS с кодом подтверждения. 
+				| Он потребуеться вам для потверждения оплаты
+			form.modal-form
+				label.modal-form__label._black Введите номер мобильного телефона
+				input(type="text" placeholder="7 916 987 11 11 " value="").modal-form__input
+				.modal-form__example формат: 7XXXYYYYYYY
+				.modal-form-captcha
+					.modal-form-captcha-col._left
+						.modal-form__label._black._nomargin Введите цифры, показанные на картинке
+					.modal-form-captcha-col
+						.modal-form-captcha-col__top
+							.modal-form-captcha__image
+								img(src="%=static=%images/content/captcha.png" alt="")
+							a(href="#" title="").modal-form-captcha__link Обновить код
+						input(type="text" value="").modal-form-captcha__input
+				input(type="submit" value="Выслать пароль").modal-form__button._purple
+			a(href="#" title="").modal__link Пользовательское соглашение
+		.modal__limitation._gray 18+
+
+mixin modal-sign-in(data)
+	-var modifier = attributes.class || ''
+	.modal(class="#{modifier}")._sign-in
+		.modal__content
+			.modal__title Авторизация
+			form.modal-form
+				label.modal-form__label._black
+					| Для  авторизации введите одинадцатизначный номер Вашего телефона в формате +7XXXYYYYY
+				input(type="text" placeholder="7 916 987 11 11 " value="").modal-form__input
+				.modal-form-captcha._unflex
+					.modal-form__label._black._nomargin Введите код указанный на картинке
+					.modal-form-captcha__input-block
+						input(type="text" value="").modal-form-captcha__input._big
+						.modal-form-captcha__image
+							img(src="%=static=%images/content/captcha.png" alt="")
+					a(href="#" title="").modal-form-captcha__link Перезагрузить
+				input(type="submit" value="Ок").modal-form__button._purple
+		.modal__limitation._gray 18+		
+
+mixin modal-access-by(data)
+	-var modifier = attributes.class || ''
+	.modal(class="#{modifier}")
+		.modal__content
+			.modal__title Доступ к 
+				span “http://adultclipsnnn.org”
+			.modal__text Стоимоить 20,32 руб с НДС за 1 день с основого счета МТС
+			form.modal-form
+				.modal-form-enter-code
+					.modal-form-enter-code-col._left
+						.modal-form__label._black._nomargin Введите код активации, полученный в SMS:
+					.modal-form-enter-code-col
+						input(type="text" placeholder="7 916 987 11 11 " value="").modal-form-enter-code__input
+				.modal-form-captcha._unflex
+					.modal-form__label._black._nomargin Введите код указанный на картинке
+					.modal-form-captcha__input-block
+						.modal-form-captcha__image
+							img(src="%=static=%images/content/captcha.png" alt="")
+						input(type="text" value="").modal-form-captcha__input._big._full-width
+
+					a(href="#" title="").modal-form-captcha__link Показать другую картинку
+				input(type="submit" value="Ок").modal-form__button._purple
+		.modal__limitation._gray 18+
+
+mixin modal-cabinet(data)
+	-var modifier = attributes.class || ''
+	.modal(class="#{modifier}")
+		.modal__content
+			.modal-info
+				.modal-info__item
+					.modal-info-col
+						.modal-info-col__property Услуга
+					.modal-info-col
+						.modal-info-col__value подписка на  сервис hotclips.org
+				.modal-info__item
+					.modal-info-col
+						.modal-info-col__property Провайдер услуги
+					.modal-info-col
+						.modal-info-col__value ООО  "Т МЕДИА"
+				.modal-info__item
+					.modal-info-col
+						.modal-info-col__property Стоимость
+					.modal-info-col
+						.modal-info-col__value 30 руб. сутки
+				.modal-info__item
+					.modal-info-col
+						.modal-info-col__property Подключение
+					.modal-info-col
+						.modal-info-col__value 30 руб.
+				.modal-info__item
+					.modal-info-col
+						.modal-info-col__property Периодичность списания
+					.modal-info-col
+						.modal-info-col__value сутки
+			.modal__title._small
+				| Код подтверждения отправлен на номер 
+				| +7 (953) 185-66-99 Для отписки СТОП 
+				| на номер 2217209
+			form.modal-form
+				.modal-form-enter-code
+					.modal-form-enter-code-col._left
+						.modal-form__label._nomargin Введите полученный код:
+					.modal-form-enter-code-col
+						input(type="text" placeholder="" value="").modal-form-enter-code__input
+						a(href="#" title="").modal-form-enter-code__link Отправить повторно
+				label.modal-form-checkbox-block
+					input(type="checkbox" checked)
+					label.modal-form-checkbox-block__label
+						| Мне исполнилось 18 лет и Я согласен
+						| с <a href="#" title="">Правилами предоставления услуги</a>
+				.modal-form-buttons-group
+					input(type="submit" value="Подписаться").modal-form-buttons-group__button._purple
+					input(type="submit" value="Отмена").modal-form-buttons-group__button._gray
+		.modal__limitation._gray 18+

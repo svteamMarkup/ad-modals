@@ -1,0 +1,25 @@
+.rules {
+	color: $light-gray;
+	background-color: #474747;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+	text-align: center;
+	&__button {
+		@extend .button;
+		text-transform: uppercase;
+		padding: 15px 18px 10px;
+		width: auto;
+		font-size: 15px;
+		margin-bottom: 15px;
+	}
+	&__title {
+		font-size: 12px;
+	}
+	&__text {
+		font-size: 12px;
+		line-height: 17px;
+		padding-left: 25px;
+		padding-right: 20px;
+	}	
+}

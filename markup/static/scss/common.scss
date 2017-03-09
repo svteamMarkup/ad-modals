@@ -1,0 +1,23 @@
+html,
+body {
+    height: 100%;
+
+    color: $black;
+    background-color: $bodyBg;
+    font-family: 'Lato-Medium';
+    font-size: $baseFontSize;
+}
+input,
+textarea {
+    border: none;
+    outline: none;
+}
+ol li, ul li {
+    @include nl;
+}
+.main {
+    width: 100%;
+    margin: auto;
+    max-width: 730px;
+    padding-top: 73px;
+}
