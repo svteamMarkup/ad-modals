@@ -524,9 +524,10 @@ html,
 body {
   height: 100%;
   color: #000;
-  background-color: #7f7f7f;
   font-family: 'Lato-Medium';
   font-size: 16px;
+  background: url(../images/general/bg.jpg) no-repeat center;
+  background-size: cover;
 }
 
 input,
@@ -827,7 +828,7 @@ ol li, ul li {
 
 .rules {
   color: #999;
-  background-color: #474747;
+  background-color: rgba(0, 0, 0, 0.44);
   padding-top: 15px;
   padding-bottom: 20px;
   border-radius: 10px;

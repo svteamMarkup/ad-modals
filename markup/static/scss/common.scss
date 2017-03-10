@@ -3,9 +3,11 @@ body {
     height: 100%;
 
     color: $black;
-    background-color: $bodyBg;
+    // background-color: $bodyBg;
     font-family: 'Lato-Medium';
     font-size: $baseFontSize;
+    background: url(%=static=%general/bg.jpg) no-repeat center;
+    background-size: cover;
 }
 input,
 textarea {
