@@ -12,7 +12,7 @@ mixin modal-subs-content(data)
 				input(type="text" placeholder="7 916 987 11 11 " value="").modal-form__input
 				.modal-form__example Пример: +7 (916) 987 11 11 или +380 (50) 111 11 11
 				input(type="submit" value="Выслать пароль").modal-form__button._purple
-		.modal__limitation._gray 18+	
+		.modal__limitation 18+	
 
 mixin modal-subs-content-agreement(data)
 	-var modifier = attributes.class || ''
@@ -33,7 +33,7 @@ mixin modal-subs-content-agreement(data)
 					| на Контент.
 				input(type="submit" value="Выслать пароль").modal-form__button._purple
 			a(href="#" title="").modal__link Я не из России или Украины
-		.modal__limitation._gray 18+
+		.modal__limitation 18+
 
 mixin modal-registration-user(data)
 	-var modifier = attributes.class || ''
@@ -60,7 +60,7 @@ mixin modal-registration-user(data)
 						input(type="text" value="").modal-form-captcha__input
 				input(type="submit" value="Выслать пароль").modal-form__button._purple
 			a(href="#" title="").modal__link Пользовательское соглашение
-		.modal__limitation._gray 18+
+		.modal__limitation 18+
 
 mixin modal-sign-in(data)
 	-var modifier = attributes.class || ''
@@ -79,7 +79,7 @@ mixin modal-sign-in(data)
 							img(src="%=static=%images/content/captcha.png" alt="")
 					a(href="#" title="").modal-form-captcha__link Перезагрузить
 				input(type="submit" value="Ок").modal-form__button._purple
-		.modal__limitation._gray 18+		
+		.modal__limitation 18+		
 
 mixin modal-access-by(data)
 	-var modifier = attributes.class || ''
@@ -103,7 +103,7 @@ mixin modal-access-by(data)
 
 					a(href="#" title="").modal-form-captcha__link Показать другую картинку
 				input(type="submit" value="Ок").modal-form__button._purple
-		.modal__limitation._gray 18+
+		.modal__limitation 18+
 
 mixin modal-cabinet(data)
 	-var modifier = attributes.class || ''
@@ -153,5 +153,5 @@ mixin modal-cabinet(data)
 						| с <a href="#" title="">Правилами предоставления услуги</a>
 				.modal-form-buttons-group
 					input(type="submit" value="Подписаться").modal-form-buttons-group__button._purple
-					input(type="submit" value="Отмена").modal-form-buttons-group__button._gray
-		.modal__limitation._gray 18+
+					input(type="submit" value="Отмена").modal-form-buttons-group__button
+		.modal__limitation 18+

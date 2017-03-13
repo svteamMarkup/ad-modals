@@ -1,0 +1,395 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"margn",
+				"margin-top"
+			],
+			[
+				"page",
+				"page404"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"p",
+				"page404"
+			],
+			[
+				"marign",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"tha",
+				"thanks-page-map"
+			],
+			[
+				"ord",
+				"order-page"
+			],
+			[
+				"form",
+				"form-radio__label"
+			],
+			[
+				"js",
+				"jsFormRadio"
+			],
+			[
+				"backgro",
+				"background"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"order",
+				"order-page-additionally"
+			],
+			[
+				"fr",
+				"form-field"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"thank",
+				"thanks-page-map"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"flex-",
+				"_flex-end"
+			],
+			[
+				"car",
+				"cart-list-cost"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"cata",
+				"cart-list-table-info"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"tetx",
+				"text-align"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"pro",
+				"product-card-info__"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/extiser/git/ad-modals/markup"
+	],
+	"file_history":
+	[
+		"/Users/extiser/git/quick-made/markup/components/search/search.scss",
+		"/Users/extiser/git/quick-made/markup/components/menu/menu.scss",
+		"/Users/extiser/git/quick-made/markup/pages/404.jade",
+		"/Users/extiser/git/quick-made/markup/components/page404/page404.jade",
+		"/Users/extiser/git/quick-made/markup/components/page404/page404.scss",
+		"/Users/extiser/git/quick-made/markup/components/header/header.scss",
+		"/Users/extiser/git/quick-made/markup/components/header/header.jade",
+		"/Users/extiser/git/quick-made/markup/components/official/official.scss",
+		"/Users/extiser/git/quick-made/markup/components/phone/phone.scss",
+		"/Users/extiser/git/quick-made/markup/components/official/official.jade",
+		"/Users/extiser/git/quick-made/markup/components/phone/phone.jade",
+		"/Users/extiser/git/quick-made/markup/pages/layout.jade",
+		"/Users/extiser/git/quick-made/markup/components/single-page/single-page.jade",
+		"/Users/extiser/git/quick-made/markup/components/single-page/single-page.scss",
+		"/Users/extiser/git/quick-made/markup/pages/contacts.jade",
+		"/Users/extiser/git/quick-made/markup/components/contacts-page/contacts-page.jade",
+		"/Users/extiser/git/quick-made/markup/components/thanks-page/thanks-page.scss",
+		"/Users/extiser/git/quick-made/markup/static/scss/GUI.scss",
+		"/Users/extiser/git/quick-made/markup/components/form-gui/form-gui.scss",
+		"/Users/extiser/git/quick-made/markup/components/form-gui/form-gui.js",
+		"/Users/extiser/git/quick-made/markup/pages/order.jade",
+		"/Users/extiser/git/quick-made/markup/components/order-page/order-page.jade",
+		"/Users/extiser/git/quick-made/markup/components/order-page/order-page.scss",
+		"/Users/extiser/git/quick-made/markup/components/form-gui/form-gui.jade",
+		"/Users/extiser/git/quick-made/markup/components/form-gui/calendar.scss",
+		"/Users/extiser/git/quick-made/markup/components/order-page/order-page.js",
+		"/Users/extiser/git/quick-made/markup/static/scss/libraries/custom-icons.scss",
+		"/Users/extiser/git/quick-made/markup/components/thanks-page/thanks-page.jade",
+		"/Users/extiser/git/quick-made/markup/components/cart-list/cart-list.scss",
+		"/Users/extiser/git/quick-made/markup/pages/thanks.jade",
+		"/Users/extiser/git/SVTEAM/sovets/protected/views/frontend/partials/body.php",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/breadcrumbs/breadcrumbs.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/footer/footer.jade",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/footer/footer.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/pages/single.jade",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/single-content/single-content.jade",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/top-bar/top-bar.jade",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/top-search/top-search.jade",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/top-search/top-search.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/top-bar/top-bar.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/top-ask/top-ask.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/single-content/single-content.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/static/scss/GUI.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/categories-main/categories-main.jade",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/categories-main/categories-main.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/single-share/single-share.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/single-top/single-top.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/top-login/top-login.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/top-menu/top-menu.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/zodiac/zodiac.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/advertise-content/advertise-content.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/article-block-small/article-block-small.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/article-user/article-user.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/expert-add-article/expert-add-article.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/expert-articles/expert-articles.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/experts-list/experts-list.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/experts-profile/experts-profile.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/feedback-page/feedback-page.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/single-ask/single-ask.scss",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/menu/menu.jade",
+		"/Users/extiser/git/quick-made/markup/pages/cart.jade",
+		"/Users/extiser/git/quick-made/markup/components/cart-list/cart-list.jade",
+		"/Users/extiser/git/verst_sovets-pro/markup/pages/user.jade",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/user-page/user-page.jade",
+		"/Users/extiser/git/verst_sovets-pro/markup/modules/user-page/user-page.scss",
+		"/Users/extiser/git/quick-made/markup/components/footer/footer.jade",
+		"/Users/extiser/git/quick-made/markup/components/footer/footer.scss",
+		"/Users/extiser/git/quick-made/markup/components/seo-text/seo-text.jade",
+		"/Users/extiser/git/quick-made/markup/components/seo-text/seo-text.scss",
+		"/Users/extiser/git/quick-made/markup/components/catalog-inside/catalog-inside.jade",
+		"/Users/extiser/git/quick-made/markup/components/catalog-inside/catalog-inside.scss",
+		"/Users/extiser/git/quick-made/markup/pages/product.jade",
+		"/Users/extiser/git/quick-made/markup/components/similar-products/similar-products.jade",
+		"/Users/extiser/git/quick-made/markup/components/similar-products/similar-products.scss",
+		"/Users/extiser/git/quick-made/markup/components/extended-block/extended-block.scss",
+		"/Users/extiser/git/quick-made/markup/components/product-card/product-card.scss",
+		"/Users/extiser/git/quick-made/markup/components/product-card/product-card.jade",
+		"/Users/extiser/git/quick-made/markup/components/other-volumes/other-volumes.jade",
+		"/Users/extiser/git/quick-made/markup/components/other-volumes/other-volumes.scss",
+		"/Users/extiser/git/quick-made/markup/components/small-block/small-block.jade",
+		"/Users/extiser/git/quick-made/markup/components/small-block/small-block.scss",
+		"/Users/extiser/git/quick-made/markup/pages/index.jade",
+		"/Users/extiser/Library/Application Support/Sublime Text 3/Packages/User/CSScomb.sublime-settings",
+		"/Users/extiser/Library/Application Support/Sublime Text 3/Packages/CSScomb/CSScomb.sublime-settings"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"/Users/extiser/git/verst_sovets-pro/markup/modules"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"img",
+			"@media screen and (max-width: 420px) {",
+			"@include breakpoint(small) {",
+			"@include breakpoint(medium) {",
+			"img",
+			"slick"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"@media screen and (max-width: 800px) {",
+			"@include breakpoint(medium) {",
+			"@include breakpoint(large) {"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ad-modals.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": false,
+	"side_bar_visible": true,
+	"side_bar_width": 288.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

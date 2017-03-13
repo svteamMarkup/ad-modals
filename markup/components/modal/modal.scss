@@ -1,221 +1,308 @@
 .modal {
-	background-repeat:  no-repeat;
-	background-image: url(%=static=%general/modal-bg1.jpg);
-	background-size: cover;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	height: 475px;
-	box-sizing: border-box;
-	border-bottom: 2px solid $purple;
-	margin-bottom: 30px;
-	position: relative;
-	&._second {
-		background-image: url(%=static=%general/modal-bg2.jpg);
-	}
-	&._sign-in {
-		padding-top: 85px;
-	}
-	&__content {
-		width: 48%;
-		margin-left: 60px;
-	}
-	&__title {
-		font-size: 27px;
-		line-height: 27px;
-		font-family: 'Lato-Black';
-		color: $purple;
-		margin-bottom: 15px;
-		text-transform: uppercase;
-		&._small {
-			font-size: 16px;
-			font-family: 'Lato-Semibold';
-			text-transform: none;
-		}
-		span {
-			font-size: 19px;
-		}
-	}
-	&__text {
-		font-size: 14px;
-		font-family: 'Lato-Medium';
-		line-height: 18px;
-		color: $gray;
-		margin-bottom: 22px;
-		padding-bottom: 10px;
-		border-bottom: 1px solid $purple;
-	}
-	&__link {
-		font-size: 13px;
-	}
-	&__limitation {
-		width: 57px;
-		height: 57px;
-		background-color: #f7f8f9;
-		font-size: 24px;
-		color: $purple;
-		border-radius: 50%;
-		position: absolute;
-		right: 20px;
-		top: 40px;
-		padding-top: 18px;
-		box-sizing: border-box;
-		text-align: center;
-		font-family: 'Lato-Bold';
-		box-shadow: 0 -1px 5px rgba($black, .24);
-		&._gray {
-			background-color: #464443;
-			color: #d10369;
-		}
-	}
+  position: relative;
+
+  box-sizing: border-box;
+  width: 740px;
+  min-height: 490px;
+  margin-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  border-bottom: 2px solid $purple;
+  background-image: url(%=static=%general/modal-bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media screen and (max-width: 760px) {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    margin: auto;
+    padding: 20px;
+
+    background: $white;
+    background-image: none;
+  }
+  &._second {
+    background-image: url(%=static=%general/modal-bg2.jpg);
+    @media screen and (max-width: 760px) {
+      background: $white;
+      background-image: none;
+    }
+    .modal__limitation {
+      color: #d10369;
+      background-color: #464443;
+    }
+  }
+  &._sign-in {
+    padding-top: 85px;
+    @media screen and (max-width: 760px) {
+      padding-top: 20px;
+    }
+  }
+  &__content {
+    width: 100%;
+    max-width: 292px;
+    margin-left: 60px;
+
+    @include absoluteVerticalCenter;
+    @media screen and (max-width: 760px) {
+      position: relative;
+      top: 0;
+
+      margin-left: 0;
+
+      transform: translateY(0);
+    }
+  }
+  &__title {
+    font-family: 'Lato-Black';
+    font-size: 27px;
+    line-height: 27px;
+
+    margin-bottom: 15px;
+
+    text-transform: uppercase;
+
+    color: $purple;
+    @media screen and (max-width: 760px) {
+      font-size: 20px;
+    }
+    &._small {
+      font-family: 'Lato-Semibold';
+      font-size: 16px;
+
+      text-transform: none;
+    }
+    span {
+      font-size: 19px;
+    }
+  }
+  &__text {
+    font-family: 'Lato-Medium';
+    font-size: 14px;
+    line-height: 18px;
+
+    margin-bottom: 22px;
+    padding-bottom: 10px;
+
+    color: $gray;
+    border-bottom: 1px solid $purple;
+  }
+  &__link {
+    font-size: 13px;
+  }
+  &__limitation {
+    font-family: 'Lato-Bold';
+    font-size: 24px;
+    line-height: 57px;
+
+    position: absolute;
+    top: 40px;
+    right: 20px;
+
+    box-sizing: border-box;
+    width: 57px;
+    height: 57px;
+
+    text-align: center;
+
+    color: $purple;
+    border-radius: 50%;
+    background-color: #f7f8f9;
+    box-shadow: 0 -1px 5px rgba($black, .24);
+    @media screen and (max-width: 760px) {
+      font-size: 12px;
+      line-height: 30px;
+
+      top: 10px;
+      right: 10px;
+
+      width: 30px;
+      height: 30px;
+    }
+  }
 }
 
 .modal-form {
-	margin-bottom: 15px;
-	&__label {
-		margin-bottom: 10px;
-		color: $purple;
-		font-family: 'Lato-Semibold';
-		display: block;
-		&._black {
-			color: $black;
-		}
-		&._nomargin {
-			margin-bottom: 0;
-		}
-	}
-	&__input {
-		@extend .input-form;
-		width: 100%;
-		height: 33px;
-		font-size: 18px;
-		margin-bottom: 10px;
-	}
-	&__example {
-		font-size: 12px;
-		color: $light-gray;
-		margin-bottom: 15px;
-	}
-	&__button {
-		@extend .button;
-	}
-	&__text {
-		font-size: 14px;
-		color: $gray;
-		margin-bottom: 20px;
-	}
-	&__buttons-group {
-		display: flex;
-	}
+  margin-bottom: 15px;
+  &__label {
+    font-family: 'Lato-Semibold';
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: $purple;
+    &._black {
+      color: $black;
+    }
+    &._nomargin {
+      margin-bottom: 0;
+    }
+  }
+  &__input {
+    font-size: 18px;
+
+    width: 100%;
+    height: 33px;
+    margin-bottom: 10px;
+
+    @extend .input-form;
+  }
+  &__example {
+    font-size: 12px;
+
+    margin-bottom: 15px;
+
+    color: $light-gray;
+  }
+  &__button {
+    @extend .button;
+  }
+  &__text {
+    font-size: 14px;
+
+    margin-bottom: 20px;
+
+    color: $gray;
+  }
+  &__buttons-group {
+    display: flex;
+  }
 }
 
 .modal-form-checkbox-block {
-    margin-bottom: 5px;
-    display: block;
-	&__label {
-		@extend .checkbox-block__label;
-		font-size: 14px;
-		margin-left: 3px;
-	}
+  display: block;
+
+  margin-bottom: 5px;
+  &__label {
+    font-size: 14px;
+
+    margin-left: 3px;
+
+    @extend .checkbox-block__label;
+  }
 }
 
 .modal-form-captcha {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 10px;
-	&._unflex {
-		display: block;
-	}
-	&__link {
-		font-size: 13px;
-	}
-	&__image {
-		margin-right: 7px;
-	}
-	&__input {
-		@extend .input-form;
-		height: 25px;
-		&._big {
-			height: 30px;
-		}
-		&._full-width {
-			width: 100%;
-		}
-	}
-	&__input-block {
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-	}
+  display: flex;
+
+  margin-bottom: 10px;
+
+  justify-content: space-between;
+  align-items: center;
+  &._unflex {
+    display: block;
+  }
+  &__link {
+    font-size: 13px;
+  }
+  &__image {
+    margin-right: 7px;
+  }
+  &__input {
+    height: 25px;
+
+    @extend .input-form;
+    &._big {
+      height: 30px;
+    }
+    &._full-width {
+      width: 100%;
+    }
+  }
+  &__input-block {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+  }
 }
 
 .modal-form-captcha-col {
-	&__top {
-		display: flex;
-		justify-content: flex-start;
-		margin-bottom: 5px;
-		img {
-			display: block;
-		}
-	}
-	&._left {
-		width: 60%;
-	}
+  &__top {
+    display: flex;
+
+    margin-bottom: 5px;
+
+    justify-content: flex-start;
+    img {
+      display: block;
+    }
+  }
+  &._left {
+    width: 60%;
+  }
 }
 
 .modal-top {
-	position: relative;
-	&__pagination {
-		background-color: #dfe0e0;
-		padding: 6px 15px 6px;
-		line-height: 1;
-		font-size: 13px;
-		color: $gray;
-		position: absolute;
-		top: 3px;
-		right: 0;
-		border-radius: 15px;
-	}
+  position: relative;
+  &__pagination {
+    font-size: 13px;
+    line-height: 1;
+
+    position: absolute;
+    top: 3px;
+    right: 0;
+
+    padding: 6px 15px 6px;
+
+    color: $gray;
+    border-radius: 15px;
+    background-color: #dfe0e0;
+  }
 }
 
 .modal-form-enter-code {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 15px;
-	&__input {
-		@extend .input-form;
-		font-size: 14px;
-		height: 33px;
-		display: block;
-	}
-	&__link {
-		font-size: 13px;
-	}
+  display: flex;
+
+  margin-bottom: 15px;
+
+  justify-content: space-between;
+  &__input {
+    font-size: 14px;
+
+    display: block;
+
+    height: 33px;
+
+    @extend .input-form;
+  }
+  &__link {
+    font-size: 13px;
+  }
 }
 
 .modal-info {
-    padding-bottom: 10px;
-    border-bottom: 1px solid #c20562;
-    margin-bottom: 15px;	
-	&__item {
-		display: flex;
-		justify-content: space-between;
-		margin-bottom: 5px;
-	}
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #c20562;
+  &__item {
+    display: flex;
+
+    margin-bottom: 5px;
+
+    justify-content: space-between;
+  }
 }
 .modal-info-col {
-	width: 50%;
-	font-size: 12px;
-	&__value {
-		font-family: 'Lato-Semibold';
-	}
+  font-size: 12px;
+
+  width: 50%;
+  &__value {
+    font-family: 'Lato-Semibold';
+  }
 }
 .modal-form-buttons-group {
-	display: flex;
-	&__button {
-		@extend .button;		
-		font-size: 16px;
-		text-transform: uppercase;
-		margin-right: 3px;
-	}
+  display: flex;
+  &__button {
+    font-size: 16px;
+
+    margin-right: 3px;
+
+    text-transform: uppercase;
+
+    @extend .button;
+  }
 }

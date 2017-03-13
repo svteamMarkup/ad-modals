@@ -1,25 +1,43 @@
 html,
 body {
-    height: 100%;
+  // background-color: $bodyBg;
+  font-family: 'Lato-Medium';
+  font-size: $baseFontSize;
 
-    color: $black;
-    // background-color: $bodyBg;
-    font-family: 'Lato-Medium';
-    font-size: $baseFontSize;
-    background: url(%=static=%general/bg.jpg) no-repeat center;
-    background-size: cover;
+  height: 100%;
+
+  color: $black;
+  background: url(%=static=%general/bg.jpg) no-repeat center;
+  background-size: cover;
+  @media screen and (max-width: 760px) {
+    background-attachment: fixed;
+    background-clip: contain;
+  }
 }
 input,
 textarea {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 }
-ol li, ul li {
-    @include nl;
+ol li,
+ul li {
+  @include nl;
 }
 .main {
-    width: 100%;
-    margin: auto;
-    max-width: 730px;
-    padding-top: 73px;
+  width: 100%;
+  max-width: 740px;
+  margin: auto;
+
+  @include absoluteCenter;
+  @media screen and (max-width: 760px) {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 95%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    transform: translate(0,0);
+  }
 }

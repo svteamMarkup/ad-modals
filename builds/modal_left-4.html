@@ -32,18 +32,25 @@
 
     <body>
         <main class="main">
-            <div class="modal _second">
+            <div class="modal _sign-in">
                 <div class="modal__content">
-                    <div class="modal__title">Регистрация: подписка на контент</div>
-                    <div class="modal__text">Чтобы подключить доступ к Подписке на Контент, заполните следующую форму:</div>
+                    <div class="modal__title">Авторизация</div>
                     <form class="modal-form">
-                        <label class="modal-form__label">Введите номер мобильного телефона</label>
+                        <label class="modal-form__label _black">Для авторизации введите одинадцатизначный номер Вашего телефона в формате +7XXXYYYYY</label>
                         <input type="text" placeholder="7 916 987 11 11 " value="" class="modal-form__input">
-                        <div class="modal-form__example">Пример: +7 (916) 987 11 11 или +380 (50) 111 11 11</div>
-                        <input type="submit" value="Выслать пароль" class="modal-form__button _purple">
+                        <div class="modal-form-captcha _unflex">
+                            <div class="modal-form__label _black _nomargin">Введите код указанный на картинке</div>
+                            <div class="modal-form-captcha__input-block">
+                                <input type="text" value="" class="modal-form-captcha__input _big">
+                                <div class="modal-form-captcha__image">
+                                    <img src="static/images/content/captcha.png" alt="">
+                                </div>
+                            </div><a href="#" title="" class="modal-form-captcha__link">Перезагрузить</a>
+                        </div>
+                        <input type="submit" value="Ок" class="modal-form__button _purple">
                     </form>
                 </div>
-                <div class="modal__limitation _gray">18+</div>
+                <div class="modal__limitation">18+</div>
             </div>
         </main>
         <script src="static/js/main.min.js"></script>

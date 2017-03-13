@@ -32,33 +32,25 @@
 
     <body>
         <main class="main">
-            <div class="modal _second">
+            <div class="modal">
                 <div class="modal__content">
-                    <div class="modal__title">Доступ к <span>“http://adultclipsnnn.org”</span>
-                    </div>
-                    <div class="modal__text">Стоимоить 20,32 руб с НДС за 1 день с основого счета МТС</div>
+                    <div class="modal__title">Регистрация: подписка на контент</div>
+                    <div class="modal__text">Чтобы подключить доступ к Подписке на Контент, заполните следующую форму:</div>
                     <form class="modal-form">
-                        <div class="modal-form-enter-code">
-                            <div class="modal-form-enter-code-col _left">
-                                <div class="modal-form__label _black _nomargin">Введите код активации, полученный в SMS:</div>
-                            </div>
-                            <div class="modal-form-enter-code-col">
-                                <input type="text" placeholder="7 916 987 11 11 " value="" class="modal-form-enter-code__input">
-                            </div>
+                        <label class="modal-form__label">Введите номер мобильного телефона</label>
+                        <input type="text" placeholder="7 916 987 11 11 " value="" class="modal-form__input">
+                        <div class="modal-form__example">Пример: +7 (916) 987 11 11 или +380 (50) 111 11 11</div>
+                        <label class="modal-form-checkbox-block">
+                            <input type="checkbox" checked>
+                            <label class="modal-form-checkbox-block__label">Стоимость услуги</label>
+                        </label>
+                        <div class="modal-form__text">
+                            Мне исполнилось 18 лет и Я согласен с <a href="#" title="">Правилами предоставления</a> Подписки на Контент.
                         </div>
-                        <div class="modal-form-captcha _unflex">
-                            <div class="modal-form__label _black _nomargin">Введите код указанный на картинке</div>
-                            <div class="modal-form-captcha__input-block">
-                                <div class="modal-form-captcha__image">
-                                    <img src="static/images/content/captcha.png" alt="">
-                                </div>
-                                <input type="text" value="" class="modal-form-captcha__input _big _full-width">
-                            </div><a href="#" title="" class="modal-form-captcha__link">Показать другую картинку</a>
-                        </div>
-                        <input type="submit" value="Ок" class="modal-form__button _purple">
-                    </form>
+                        <input type="submit" value="Выслать пароль" class="modal-form__button _purple">
+                    </form><a href="#" title="" class="modal__link">Я не из России или Украины</a>
                 </div>
-                <div class="modal__limitation _gray">18+</div>
+                <div class="modal__limitation">18+</div>
             </div>
             <div class="rules"><a href="#" title="" class="rules__button _dark-gray">Вернуться</a>
                 <div class="rules__title">Правила предоставления услуги «Подписка на cvidanie.com» для Абонентов ПАО «МегаФон»</div>
