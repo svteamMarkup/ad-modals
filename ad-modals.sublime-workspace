@@ -4,12 +4,24 @@
 		"selected_items":
 		[
 			[
-				"margin",
-				"margin-right"
+				"back",
+				"background-color"
 			],
 			[
 				"pad",
 				"padding-top"
+			],
+			[
+				"marign",
+				"margin-top"
+			],
+			[
+				"backgorund-",
+				"background-image"
+			],
+			[
+				"margin",
+				"margin-right"
 			],
 			[
 				"margn",
@@ -34,10 +46,6 @@
 			[
 				"p",
 				"page404"
-			],
-			[
-				"marign",
-				"margin-bottom"
 			],
 			[
 				"font",
@@ -116,10 +124,6 @@
 				"text-align"
 			],
 			[
-				"back",
-				"background-color"
-			],
-			[
 				"in",
 				"inline"
 			],
@@ -131,6 +135,33 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "markup/pages/layout.jade",
+			"settings":
+			{
+				"buffer_size": 343,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "markup/components/top-payment/top-payment.jade",
+			"settings":
+			{
+				"buffer_size": 740,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "markup/components/top-payment/top-payment.scss",
+			"settings":
+			{
+				"buffer_size": 437,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -173,10 +204,20 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/extiser/git/ad-modals/markup"
+		"/Users/extiser/git/ad-modals/markup",
+		"/Users/extiser/git/ad-modals/markup/components",
+		"/Users/extiser/git/ad-modals/markup/components/top-payment",
+		"/Users/extiser/git/ad-modals/markup/pages",
+		"/Users/extiser/git/ad-modals/markup/static",
+		"/Users/extiser/git/ad-modals/markup/static/scss"
 	],
 	"file_history":
 	[
+		"/Users/extiser/git/ad-modals/markup/components/modal/modal.jade",
+		"/Users/extiser/git/ad-modals/markup/static/scss/common.scss",
+		"/Users/extiser/git/ad-modals/markup/components/modal/modal.scss",
+		"/Users/extiser/git/ad-modals/markup/pages/layout.jade",
+		"/Users/extiser/git/ad-modals/markup/pages/modal_left-1.jade",
 		"/Users/extiser/git/quick-made/markup/components/search/search.scss",
 		"/Users/extiser/git/quick-made/markup/components/menu/menu.scss",
 		"/Users/extiser/git/quick-made/markup/pages/404.jade",
@@ -279,6 +320,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"._gray",
 			"img",
 			"@media screen and (max-width: 420px) {",
 			"@include breakpoint(small) {",
@@ -292,6 +334,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
 			"@media screen and (max-width: 800px) {",
 			"@include breakpoint(medium) {",
 			"@include breakpoint(large) {"
@@ -305,8 +348,97 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "markup/pages/layout.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 343,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								255,
+								255
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "markup/components/top-payment/top-payment.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 740,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								696,
+								696
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "markup/components/top-payment/top-payment.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 437,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								282,
+								282
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -316,7 +448,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 70.0
 	},
 	"layout":
 	{
@@ -349,7 +481,7 @@
 	"project": "ad-modals.sublime-project",
 	"replace":
 	{
-		"height": 60.0
+		"height": 114.0
 	},
 	"save_all_on_build": true,
 	"select_file":

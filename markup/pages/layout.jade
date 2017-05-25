@@ -1,13 +1,15 @@
 doctype html
 html(class="no-js", lang="ru")
 
-	include ../components/head/head
-	include ../components/modal/modal
-	include ../components/rules/rules
+  include ../components/head/head
+  include ../components/modal/modal
+  include ../components/top-payment/top-payment
+  include ../components/rules/rules
 
-	head
-		+head(head.defaults)
-	body
-		main.main
-			block content
-		script(src='%=static=%js/main%=hash=%%=min=%.js')
+  head
+    +head(head.defaults)
+  body
+    +top-payment
+    main.main
+      block content
+    script(src='%=static=%js/main%=hash=%%=min=%.js')
